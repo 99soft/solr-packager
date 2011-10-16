@@ -6,7 +6,7 @@
  |  you may not use this file except in compliance with the License.
  |  You may obtain a copy of the License at
  |
- |      http://www.apache.org/licenses/LICENSE-2.0
+ |    http://www.apache.org/licenses/LICENSE-2.0
  |
  |  Unless required by applicable law or agreed to in writing, software
  |  distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,75 +16,75 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-    <parent>
-        <groupId>org.99soft</groupId>
-        <artifactId>oss-parent</artifactId>
-        <version>3</version>
-    </parent>
+  <parent>
+    <groupId>org.99soft</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>3</version>
+  </parent>
 
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>org.99soft.solr</groupId>
-    <artifactId>solr-packager</artifactId>
-    <name>Solr Packager</name>
-    <version>2.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <description>Solr-Packager is a Maven archetype to package Standalone Apache Solr embedded in Tomcat,
-    brought to you by Sourcesense</description>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.99soft.solr</groupId>
+  <artifactId>solr-packager</artifactId>
+  <name>Solr Packager</name>
+  <version>2.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <description>Solr-Packager is a Maven archetype to package Standalone Apache Solr embedded in Tomcat,
+  brought to you by Sourcesense</description>
+  <url>http://github.com/sourcesense/solr-packager</url>
+
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <issueManagement>
+    <system>GitHub Issue tracker</system>
+    <url>https://github.com/sourcesense/solr-packager/issues</url>
+  </issueManagement>
+
+  <scm>
     <url>http://github.com/sourcesense/solr-packager</url>
+    <connection>scm:git:ssh://github.com/sourcesense/solr-packager.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/sourcesense/solr-packager.git</developerConnection>
+  </scm>
 
-    <licenses>
-        <license>
-            <name>The Apache Software License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
+  <build>
+    <defaultGoal>install</defaultGoal>
 
-    <issueManagement>
-        <system>GitHub Issue tracker</system>
-        <url>https://github.com/sourcesense/solr-packager/issues</url>
-    </issueManagement>
+    <plugins>
+      <!--
+       | inherited from parent pom
+      -->
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+      </plugin>
 
-    <scm>
-        <url>http://github.com/sourcesense/solr-packager</url>
-        <connection>scm:git:ssh://github.com/sourcesense/solr-packager.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/sourcesense/solr-packager.git</developerConnection>
-    </scm>
+      <plugin>
+        <artifactId>maven-release-plugin</artifactId>
+        <configuration>
+          <autoVersionSubmodules>true</autoVersionSubmodules>
+        </configuration>
+      </plugin>
+    </plugins>
 
-    <build>
-        <defaultGoal>install</defaultGoal>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-assembly-plugin</artifactId>
+          <version>2.2.1</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
 
-        <plugins>
-            <!--
-             | inherited from parent pom
-            -->
-            <plugin>
-                <artifactId>maven-jar-plugin</artifactId>
-            </plugin>
-
-            <plugin>
-                <artifactId>maven-release-plugin</artifactId>
-                <configuration>
-                    <autoVersionSubmodules>true</autoVersionSubmodules>
-                </configuration>
-            </plugin>
-        </plugins>
-
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-assembly-plugin</artifactId>
-                    <version>2.2.1</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
-
-    <modules>
-        <module>resources</module>
-        <module>archetypes</module>
-        <module>site</module>
-    </modules>
+  <modules>
+    <module>resources</module>
+    <module>archetypes</module>
+    <module>site</module>
+  </modules>
 
 </project>

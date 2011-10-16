@@ -6,7 +6,7 @@
  |  you may not use this file except in compliance with the License.
  |  You may obtain a copy of the License at
  |
- |      http://www.apache.org/licenses/LICENSE-2.0
+ |    http://www.apache.org/licenses/LICENSE-2.0
  |
  |  Unless required by applicable law or agreed to in writing, software
  |  distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,34 +16,34 @@
 -->
 <project name="${project.name}">
 
-    <skin>
-        <groupId>org.apache.maven.skins</groupId>
-        <artifactId>maven-fluido-skin</artifactId>
-        <version>1.0-SNAPSHOT</version>
-    </skin>
+  <skin>
+    <groupId>org.apache.maven.skins</groupId>
+    <artifactId>maven-fluido-skin</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </skin>
 
-    <version position="left" />
+  <version position="left" />
 
-    <body>
-        <menu name="${project.name}">
-            <item name="Home" href="index.html" />
-            <item name="Create a new Solr Standalone archetype" href="standalone.html" />
-            <item name="Create a new Solr MultiCore Standalone archetype" href="multicore.html" />
-            <item name="Archetype Catalog" href="archetype-catalog.xml" />
-        </menu>
+  <body>
+    <menu name="${project.name}">
+      <item name="Home" href="index.html" />
+      <item name="Create a new Solr Standalone archetype" href="standalone.html" />
+      <item name="Create a new Solr MultiCore Standalone archetype" href="multicore.html" />
+      <item name="Archetype Catalog" href="archetype-catalog.xml" />
+    </menu>
 
-        <menu name="Miscellaneous">
-            <item name="Powered by" href="powered-by.html" />
-        </menu>
+    <menu name="Miscellaneous">
+      <item name="Powered by" href="powered-by.html" />
+    </menu>
 
-        <menu ref="reports" />
+    <menu ref="reports" />
 
-        <menu name="External Links">
-            <item name="Apache Solr" href="http://lucene.apache.org/solr/" />
-            <item name="Apache Tomcat" href="http://tomcat.apache.org/" />
-            <item name="Apache Maven" href="http://maven.apache.org/" />
-            <item name="Project Page" href="https://github.com/sourcesense/solr-packager" />
-        </menu>
-    </body>
+    <menu name="External Links">
+      <item name="Apache Solr" href="http://lucene.apache.org/solr/" />
+      <item name="Apache Tomcat" href="http://tomcat.apache.org/" />
+      <item name="Apache Maven" href="http://maven.apache.org/" />
+      <item name="Project Page" href="https://github.com/sourcesense/solr-packager" />
+    </menu>
+  </body>
 
 </project>

@@ -80,7 +80,7 @@
                 <!--
                  | exclude resources
                 -->
-                <exclude>com.sourcesense.solr:*:zip:*</exclude>
+                <exclude>org.99soft.solr:*:zip:*</exclude>
             </excludes>
             <outputDirectory>/lib</outputDirectory>
         </dependencySet>

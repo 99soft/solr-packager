@@ -6,7 +6,7 @@
  |  you may not use this file except in compliance with the License.
  |  You may obtain a copy of the License at
  |
- |      http://www.apache.org/licenses/LICENSE-2.0
+ |    http://www.apache.org/licenses/LICENSE-2.0
  |
  |  Unless required by applicable law or agreed to in writing, software
  |  distributed under the License is distributed on an "AS IS" BASIS,
@@ -15,37 +15,37 @@
  |  limitations under the License.
 -->
 <document xmlns="http://maven.apache.org/changes/1.0.0"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://maven.apache.org/changes/1.0.0 http://maven.apache.org/plugins/maven-changes-plugin/xsd/changes-1.0.0.xsd">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/changes/1.0.0 http://maven.apache.org/plugins/maven-changes-plugin/xsd/changes-1.0.0.xsd">
 
-    <properties>
-        <author>Sourcesense - The Solr Packager Team</author>
-        <title>Changes</title>
-    </properties>
+  <properties>
+    <author>The 99 Software Foundation</author>
+    <title>Changes</title>
+  </properties>
 
-    <body>
-        <release version="1.0.2" date="TBD" description="Bugfix release">
-            <action type="fix" issue="4" dev="simonetripodi">
-                Custom context root.
-            </action>
-            <action type="fix" issue="5" dev="simonetripodi">
-                Slave classifier doesn't get installed in M2 local repo.
-            </action>
-        </release>
+  <body>
+    <release version="2.0" date="TBD" description="Bugfix release">
+      <action type="fix" issue="4" dev="simonetripodi">
+        Custom context root.
+      </action>
+      <action type="fix" issue="5" dev="simonetripodi">
+        Slave classifier doesn't get installed in M2 local repo.
+      </action>
+    </release>
 
-        <release version="1.0.1" date="2011-03-06" description="Bugfix release">
-            <action type="fix" issue="1" dev="simonetripodi">
-                Conformed environment names: testing-&gt;test, staging-&gt;stage.
-            </action>
-            <action type="update" issue="2" dev="simonetripodi">
-                Web application is a proper webapp managed by the war plugin.
-            </action>
-            <action type="add" issue="3" dev="simonetripodi">
-                Distribute the archetype-catalog.xml descriptor in the site.
-            </action>
-        </release>
+    <release version="1.0.1" date="2011-03-06" description="Bugfix release">
+      <action type="fix" issue="1" dev="simonetripodi">
+        Conformed environment names: testing-&gt;test, staging-&gt;stage.
+      </action>
+      <action type="update" issue="2" dev="simonetripodi">
+        Web application is a proper webapp managed by the war plugin.
+      </action>
+      <action type="add" issue="3" dev="simonetripodi">
+        Distribute the archetype-catalog.xml descriptor in the site.
+      </action>
+    </release>
 
-        <release version="1.0.0" date="2011-01-11" description="First release" />
-    </body>
+    <release version="1.0.0" date="2011-01-11" description="First release" />
+  </body>
 
 </document>

@@ -6,7 +6,7 @@
  |  you may not use this file except in compliance with the License.
  |  You may obtain a copy of the License at
  |
- |      http://www.apache.org/licenses/LICENSE-2.0
+ |    http://www.apache.org/licenses/LICENSE-2.0
  |
  |  Unless required by applicable law or agreed to in writing, software
  |  distributed under the License is distributed on an "AS IS" BASIS,
@@ -15,30 +15,30 @@
  |  limitations under the License.
 -->
 <archetype-catalog>
-    <archetypes>
-        <archetype>
-            <groupId>org.99soft.solr</groupId>
-            <artifactId>solr-standalone-tomcat-archetype</artifactId>
-            <version>2.0</version>
-            <description>Solr Packager Standalone Archetype (Tomcat)</description>
-        </archetype>
-        <archetype>
-            <groupId>org.99soft.solr</groupId>
-            <artifactId>solr-multicore-tomcat-archetype</artifactId>
-            <version>2.0</version>
-            <description>Solr Packager Multicore Standalone Archetype (Tomcat)</description>
-        </archetype>
-        <archetype>
-            <groupId>org.99soft.solr</groupId>
-            <artifactId>solr-standalone-jetty-archetype</artifactId>
-            <version>2.0</version>
-            <description>Solr Packager Standalone Archetype (Jetty)</description>
-        </archetype>
-        <archetype>
-            <groupId>org.99soft.solr</groupId>
-            <artifactId>solr-multicore-jetty-archetype</artifactId>
-            <version>2.0</version>
-            <description>Solr Packager Multicore Standalone Archetype (Jetty)</description>
-        </archetype>
-    </archetypes>
+  <archetypes>
+    <archetype>
+      <groupId>org.99soft.solr</groupId>
+      <artifactId>solr-standalone-tomcat-archetype</artifactId>
+      <version>2.0</version>
+      <description>Solr Packager Standalone Archetype (Tomcat)</description>
+    </archetype>
+    <archetype>
+      <groupId>org.99soft.solr</groupId>
+      <artifactId>solr-multicore-tomcat-archetype</artifactId>
+      <version>2.0</version>
+      <description>Solr Packager Multicore Standalone Archetype (Tomcat)</description>
+    </archetype>
+    <archetype>
+      <groupId>org.99soft.solr</groupId>
+      <artifactId>solr-standalone-jetty-archetype</artifactId>
+      <version>2.0</version>
+      <description>Solr Packager Standalone Archetype (Jetty)</description>
+    </archetype>
+    <archetype>
+      <groupId>org.99soft.solr</groupId>
+      <artifactId>solr-multicore-jetty-archetype</artifactId>
+      <version>2.0</version>
+      <description>Solr Packager Multicore Standalone Archetype (Jetty)</description>
+    </archetype>
+  </archetypes>
 </archetype-catalog>
