@@ -47,7 +47,7 @@
          | Copy the Solr webapp
         -->
         <file>
-            <source>${basedir}/${project.build.directory}/${project.build.finalName}-master-${environment}.war</source>
+            <source>${basedir}/${project.build.directory}/${project.build.finalName}-slave-${environment}.war</source>
             <destName>${solr.webapp.name}.war</destName>
             <outputDirectory>/webapps</outputDirectory>
         </file>
