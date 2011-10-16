@@ -28,7 +28,7 @@
     -->
     <tomcat.version>6.0.29</tomcat.version>
     <solr.version>3.4.0</solr.version>
-    <slf4j.version>1.5.5</slf4j.version>
+    <solr.version>1.6.1</solr.version>
     <solrp.version>2.0</solrp.version>
 
     <!--
