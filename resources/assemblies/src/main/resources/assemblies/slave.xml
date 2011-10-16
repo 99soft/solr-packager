@@ -6,7 +6,7 @@
  |  you may not use this file except in compliance with the License.
  |  You may obtain a copy of the License at
  |
- |      http://www.apache.org/licenses/LICENSE-2.0
+ |    http://www.apache.org/licenses/LICENSE-2.0
  |
  |  Unless required by applicable law or agreed to in writing, software
  |  distributed under the License is distributed on an "AS IS" BASIS,
@@ -15,84 +15,84 @@
  |  limitations under the License.
 -->
 <assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.1"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.1 http://maven.apache.org/xsd/assembly-1.1.1.xsd">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.1 http://maven.apache.org/xsd/assembly-1.1.1.xsd">
 
-    <id>slave-${environment}</id>
-    <formats>
-        <format>zip</format>
-    </formats>
-    <includeBaseDirectory>true</includeBaseDirectory>
-    <baseDirectory>${project.build.finalName}-slave-${environment}</baseDirectory>
+  <id>slave-${environment}</id>
+  <formats>
+    <format>zip</format>
+  </formats>
+  <includeBaseDirectory>true</includeBaseDirectory>
+  <baseDirectory>${project.build.finalName}-slave-${environment}</baseDirectory>
 
-    <fileSets>
-        <!--
-         | Copy all Tomcat stuff
-        -->
-        <fileSet>
-            <directory>${basedir}/${project.build.directory}/resources/tomcat/bin</directory>
-            <outputDirectory>/bin</outputDirectory>
-            <fileMode>755</fileMode>
-        </fileSet>
+  <fileSets>
+    <!--
+     | Copy all Tomcat stuff
+    -->
+    <fileSet>
+      <directory>${basedir}/${project.build.directory}/resources/tomcat/bin</directory>
+      <outputDirectory>/bin</outputDirectory>
+      <fileMode>755</fileMode>
+    </fileSet>
 
-        <fileSet>
-            <directory>${basedir}/${project.build.directory}/resources/tomcat/conf</directory>
-            <outputDirectory>/conf</outputDirectory>
-            <filtered>true</filtered>
-        </fileSet>
-    </fileSets>
+    <fileSet>
+      <directory>${basedir}/${project.build.directory}/resources/tomcat/conf</directory>
+      <outputDirectory>/conf</outputDirectory>
+      <filtered>true</filtered>
+    </fileSet>
+  </fileSets>
 
-    <files>
-        <!--
-         | Copy the Solr webapp
-        -->
-        <file>
-            <source>${basedir}/${project.build.directory}/${project.build.finalName}-slave-${environment}.war</source>
-            <destName>${solr.webapp.name}.war</destName>
-            <outputDirectory>/webapps</outputDirectory>
-        </file>
-
-        <!--
-         | The catalina bootstrap
-        -->
-        <file>
-            <source>${basedir}/${project.build.directory}/${project.build.finalName}-bootstrap.jar</source>
-            <destName>bootstrap.jar</destName>
-            <outputDirectory>/bin</outputDirectory>
-        </file>
-    </files>
+  <files>
+    <!--
+     | Copy the Solr webapp
+    -->
+    <file>
+      <source>${basedir}/${project.build.directory}/${project.build.finalName}-slave-${environment}.war</source>
+      <destName>${solr.webapp.name}.war</destName>
+      <outputDirectory>/webapps</outputDirectory>
+    </file>
 
     <!--
-     | Copy all project dependencies
+     | The catalina bootstrap
     -->
-    <dependencySets>
-        <!--
-         | Tomcat dependencies
-        -->
-        <dependencySet>
-            <useProjectArtifact>false</useProjectArtifact>
-            <scope>provided</scope>
-            <excludes>
-                <!--
-                 | Tomcat juli is expected to be put to the $CATALINA_HOME/bin
-                -->
-                <exclude>org.apache.tomcat:juli:*</exclude>
-                <!--
-                 | exclude resources
-                -->
-                <exclude>org.99soft.solr:*:zip:*</exclude>
-            </excludes>
-            <outputDirectory>/lib</outputDirectory>
-        </dependencySet>
+    <file>
+      <source>${basedir}/${project.build.directory}/${project.build.finalName}-bootstrap.jar</source>
+      <destName>bootstrap.jar</destName>
+      <outputDirectory>/bin</outputDirectory>
+    </file>
+  </files>
 
-        <dependencySet>
-            <useProjectArtifact>false</useProjectArtifact>
-            <scope>provided</scope>
-            <includes>
-                <include>org.apache.tomcat:juli:*</include>
-            </includes>
-            <outputDirectory>/bin</outputDirectory>
-        </dependencySet>
-    </dependencySets>
+  <!--
+   | Copy all project dependencies
+  -->
+  <dependencySets>
+    <!--
+     | Tomcat dependencies
+    -->
+    <dependencySet>
+      <useProjectArtifact>false</useProjectArtifact>
+      <scope>provided</scope>
+      <excludes>
+        <!--
+         | Tomcat juli is expected to be put to the $CATALINA_HOME/bin
+        -->
+        <exclude>org.apache.tomcat:juli:*</exclude>
+        <!--
+         | exclude resources
+        -->
+        <exclude>org.99soft.solr:*:zip:*</exclude>
+      </excludes>
+      <outputDirectory>/lib</outputDirectory>
+    </dependencySet>
+
+    <dependencySet>
+      <useProjectArtifact>false</useProjectArtifact>
+      <scope>provided</scope>
+      <includes>
+        <include>org.apache.tomcat:juli:*</include>
+      </includes>
+      <outputDirectory>/bin</outputDirectory>
+    </dependencySet>
+  </dependencySets>
 
 </assembly>
