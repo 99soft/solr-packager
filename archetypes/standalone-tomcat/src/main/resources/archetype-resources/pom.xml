@@ -45,7 +45,7 @@
                     <version>2.2.1</version>
                     <dependencies>
                         <dependency>
-                            <groupId>com.sourcesense.solr</groupId>
+                            <groupId>org.99soft.solr</groupId>
                             <artifactId>solr-assemblies</artifactId>
                             <version>${solrp.version}</version>
                         </dependency>
@@ -362,7 +362,7 @@
          | Resources dependencies
         -->
         <dependency>
-            <groupId>com.sourcesense.solr</groupId>
+            <groupId>org.99soft.solr</groupId>
             <artifactId>solr-commons</artifactId>
             <version>${solrp.version}</version>
             <classifier>resources</classifier>
@@ -371,7 +371,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.sourcesense.solr</groupId>
+            <groupId>org.99soft.solr</groupId>
             <artifactId>solr-webapp</artifactId>
             <version>${solrp.version}</version>
             <classifier>resources</classifier>
@@ -380,7 +380,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.sourcesense.solr</groupId>
+            <groupId>org.99soft.solr</groupId>
             <artifactId>tomcat-resources</artifactId>
             <version>${solrp.version}</version>
             <classifier>resources</classifier>
