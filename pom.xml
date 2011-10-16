@@ -30,7 +30,7 @@
   <packaging>pom</packaging>
   <description>Solr-Packager is a Maven archetype to package Standalone Apache Solr embedded in Tomcat,
   brought to you by Sourcesense</description>
-  <url>http://github.com/sourcesense/solr-packager</url>
+  <url>http://github.com/99soft/solr-packager</url>
 
   <licenses>
     <license>
@@ -42,13 +42,13 @@
 
   <issueManagement>
     <system>GitHub Issue tracker</system>
-    <url>https://github.com/sourcesense/solr-packager/issues</url>
+    <url>https://github.com/99soft/solr-packager/issues</url>
   </issueManagement>
 
   <scm>
-    <url>http://github.com/sourcesense/solr-packager</url>
-    <connection>scm:git:ssh://github.com/sourcesense/solr-packager.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/sourcesense/solr-packager.git</developerConnection>
+    <url>http://github.com/99soft/solr-packager</url>
+    <connection>scm:git:ssh://github.com/99soft/solr-packager.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/99soft/solr-packager.git</developerConnection>
   </scm>
 
   <build>

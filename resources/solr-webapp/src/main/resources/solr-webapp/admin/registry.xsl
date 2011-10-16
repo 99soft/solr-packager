@@ -15,9 +15,6 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 -->
-<!-- $Id: registry.xsl 39627 2010-11-27 18:10:43Z s.tripodi $ -->
-<!-- $URL: https://dev.sourcesense.com/repos/dev/sole24ore/solar/trunk/deploy/resources/solr-webapp/src/main/resources/solr-webapp/admin/registry.xsl $ -->
-
 <xsl:stylesheet
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   version="1.0">
