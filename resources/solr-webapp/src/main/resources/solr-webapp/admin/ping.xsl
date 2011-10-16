@@ -15,6 +15,9 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 -->
+<!-- $Id$ -->
+<!-- $URL$ -->
+
 <xsl:stylesheet
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   version="1.0">
@@ -23,7 +26,7 @@
     method="html"
     indent="yes"
     encoding="utf-8"
-    media-type="text/html; charset=UTF-8"
+    media-type="text/html"
     doctype-public="-//W3C//DTD HTML 4.01//EN"
     doctype-system="http://www.w3.org/TR/html4/strict.dtd" />
 
@@ -37,7 +40,7 @@
       </head>
       <body>
         <a href=".">
-	   <img border="0" align="right" height="78" width="142" src="solr_small.png" alt="SOLR">
+	   <img border="0" align="right" height="78" width="142" src="solr_small.png" alt="Apache Solr">
 	   </img>
 	</a>
         <h1>Solr Admin (<xsl:value-of select="solr/meta/collection" />)</h1>
